@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(hsl(0, 0%, 100%), #cecece);
+}
+
+.slaider_h {
+	height: 60px;
+	width: 50%;
+	margin: 30px 0px 10px 0px;
+	padding-top: 20px;
+	background-color: rgba(10, 77, 125, 0.5);
+	text-align: center;
+}
+
+.carousel-item img {
+width: 1000px;
+height: 600px;
+}
+
+.whatsapp-number {
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin: 15px 30px 5px 20px;
+  background: url(../school/wa-image-color.png) no-repeat center top / cover;
+}
+.telegram-number {
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin: 15px 30px 5px 20px;
+  background: url(../school/tg-image-color.png) no-repeat center top / cover;
+}
+
+.mainmenu {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  padding-top: 40px;
+  font-size: 35px;
+  background: linear-gradient(#b6b6b6, #ffffffea);
+  height: 150px;
+  box-shadow: 0 4px 12px 4px #ffffffea;
+}
+.main a{
+  padding: 30px 15px 0px;
+  color: black;
+  font-weight: 100;
+}
+.main a:hover {
+  color: #007aff;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.whatsapp-number:hover, .telegram-number:hover {
+	width: 42px;
+	height: 42px;
+  transition: .3s;
+}
+.logo img{
+  width: 100%;
+  height: 80%;
+}
