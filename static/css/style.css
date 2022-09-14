@@ -34,3 +34,6 @@
   background: url(../cms/tg-image-color.png) no-repeat center top / cover;
   transition: 0.5s ease-in-out;
 }
+.small mb-1{
+	background: green;
+}
