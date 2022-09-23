@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(hsl(0, 0%, 100%), #cecece);
+  background-color: #D9CCB9 !important;
   height: 780px;
 }
 
@@ -43,13 +43,13 @@ height: 600px;
   list-style: none;
   padding-top: 40px;
   font-size: 35px;
-  background: linear-gradient(#b6b6b6, #ffffffea);
+  background: #544866;
   height: 150px;
-  box-shadow: 0 4px 12px 4px #ffffffea;
+  box-shadow: 0 2px 6px 2px #544866a5;
 }
 .main a{
   padding: 30px 15px 0px;
-  color: black;
+  color: #89A7B1;
   font-weight: 100;
 }
 .main a:hover {
@@ -84,13 +84,103 @@ height: 600px;
   font-size: 25px;
 }
 .col-md-6{
-  font-size: 20px;
-  margin: 10px;
-  color: #007aff;
+  font-size: 22px;
+  margin: 0;
+  color: #434343;
 }
-.form-group input, .form-control{
+.form-control{
   width: 100%;
   font-size: 20px;
+  color: #434343;
+  border: 0px;
+}
+.shadow-lg{
+  border: 0px;
+}
+.form-control{
+  margin: 5px 0 2px 0;
+}
+.form-group input{
+  font-size: 20px;
+  border: 0px;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+.small {
+  text-align: center;
+}
+.mt-4 input{
+  padding: 4px 0 4px 0;
+}
+.mt-4 input:hover{
   color: #007aff;
-  border-radius: 0.4em;
+  background-color: #544866;
+  transition: color .3s;
+}
+.mb-1 {
+  font-size: 22px;
+}
+.content{
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #89A7B1;
+}
+.card-image img{
+  margin: 15px;
+  width: 800px;
+  height: 500px;
+}
+.course-card{
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.card-image{
+  margin-right: 5px;
+}
+.card-content{
+  padding: 40px 10px 10px 40px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+.bff {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #f1c40f !important;
+  border-radius: 0.6em;
+  color: #f1c40f;
+  cursor: pointer;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  font-size: 55px !important;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.bff:hover, .bff:focus {
+  color: #fff;
+  outline: 0;
+}
+.card-btn {
+  border-color: #f1c40f;
+  color: #fff;
+  background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out !important;
+  transition: background 300ms ease-in-out !important;
+}
+.card-btn:hover {
+  background-position: 0;
+}
+.card-content a {
+  text-decoration: none !important;
 }

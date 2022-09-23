@@ -1,0 +1,27 @@
+{% extends 'school/base.html' %}
+
+{% block content %}
+<div class="content">
+    {% for course in courses_all %}
+    <div class="course-card">
+        <div class="card-image">
+            <img class="card-img-top"
+                 src="/media/{{ course.image }}"
+                 alt="">
+        </div>
+        <div class="card-content">
+            <h3>{{ course.name }}</h3>
+            <div class="desc-img">
+                <p>{{ course.image_desc }}</p>
+            </div>
+            <div class="card-text">
+                <p>{{ course.description }}</p>
+            </div>
+            <a href="{% url 'courses_add' course.id %}">
+                <button type="button" class="bff card-btn">{{ course.price }}$</button>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

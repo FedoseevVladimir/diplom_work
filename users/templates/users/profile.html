@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %}{{ title }}{% endblock %}
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/profile.css' %}">{% endblock %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">{% endblock %}
 {% block content %}
 
 <div class="container">
@@ -57,6 +57,7 @@
                 </div>
             </form>
         </div>
+        {% include 'school/my_courses.html' %}
     </div>
 </div>
 

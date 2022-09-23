@@ -25,10 +25,14 @@
             <li>
             </li>
             <li class="main">
-                <a href="">Онлайн курсы</a>
-                <a href="">Мои курсы</a>
-                <a href="">Об авторе</a>
-                <a href="{% url 'register' %}">Регистрация</a>
+                <a href="{% url 'online-courses' %}">Онлайн курсы</a>
+                <a href="{% url 'about_author' %}">Об авторе</a>
+                {% if user.is_authenticated %}
+                <a href="{% url 'profile' %}">Профиль:{{ user.username }}</a>
+                <a href="{% url 'logout' %}">Выйти</a>
+                {% else %}
+                <a href="{% url 'login' %}">Войти</a>
+                {% endif %}
             </li>
             <li class="contact-top">
                 <a class="whatsapp-number" href="https://web.whatsapp.com/"></a>

@@ -1,9 +1,9 @@
-from django.shortcuts import render
-
 from django.shortcuts import render, redirect
 from django.contrib import auth, messages
+from django.contrib.auth.decorators import login_required
 
 from users.forms import UserLoginForm, UserRegistrationForm, UserProfileForm
+from school.models import MyCourses
 
 
 def login(request):
@@ -37,6 +37,7 @@ def register(request):
     return render(request, 'users/register.html', context)
 
 
+@login_required(login_url='/users/login/')
 def profile(request):
     user = request.user
     if request.method == 'POST':
@@ -48,7 +49,8 @@ def profile(request):
         form = UserProfileForm(instance=user)
     context = {
         'form': form,
-        }
+        'my_courses': MyCourses.objects.filter(user=user)
+    }
     return render(request, 'users/profile.html', context)
 
 
