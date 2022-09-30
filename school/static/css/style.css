@@ -19,20 +19,11 @@ body {
 width: 1000px;
 height: 600px;
 }
-
-.whatsapp-number {
-  width: 35px;
-  height: 35px;
+.social-img img{
+  width: 46px;
+  height: 46px;
   float: right;
   margin: 15px 30px 5px 20px;
-  background: url(../school/wa-image-color.png) no-repeat center top / cover;
-}
-.telegram-number {
-  width: 35px;
-  height: 35px;
-  float: right;
-  margin: 15px 30px 5px 20px;
-  background: url(../school/tg-image-color.png) no-repeat center top / cover;
 }
 
 .mainmenu {
@@ -58,9 +49,9 @@ height: 600px;
   transition: color .3s;
 }
 
-.whatsapp-number:hover, .telegram-number:hover {
-	width: 42px;
-	height: 42px;
+.social-img img:hover {
+  transform:scale(1.3);
+  z-index: 1;
   transition: .3s;
 }
 .logo img{
@@ -183,4 +174,34 @@ height: 600px;
 }
 .card-content a {
   text-decoration: none !important;
+}
+.social-site img{
+  width: 36px;
+  height: 36px;
+  margin: 15px 30px 5px 20px;
+}
+.social-site img:hover{
+  transform:scale(1.25);
+  z-index: 1;
+  transition: .3s;
+}
+footer{
+  margin-top: 50px;
+  padding: 50px 0 40px 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #434343;
+  color: #fff;
+  text-align: center !important;
+}
+footer p{
+  width: 1070px;
+  padding-left: 30%;
+}
+.footer-menu{
+  text-align: center !important;
+}
+.footer-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 2rem;
 }

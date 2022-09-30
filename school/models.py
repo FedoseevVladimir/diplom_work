@@ -20,6 +20,7 @@ class AllCourses(models.Model):
     image = models.ImageField(upload_to='school_images', blank=True, verbose_name='Изображение')
     image_desc = models.TextField(blank=True, verbose_name='Описание картинки')
     description = models.TextField(blank=True, verbose_name='Описание')
+    tg_url = models.URLField(max_length=300, default='#', verbose_name='Курс в телеграмм')
     price = models.DecimalField(max_digits=8, decimal_places=2, default=0, verbose_name='Цена')
 
     def __str__(self):
@@ -36,7 +37,7 @@ class MyCourses(models.Model):
     create_buy = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'Корзина для {self.user.username} | Курс {self.course.name}'
+        return f'Покупка для {self.user.username} | Курс {self.course.name}'
 
     class Meta:
         verbose_name = 'Купленный курс'

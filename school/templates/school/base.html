@@ -35,8 +35,8 @@
                 {% endif %}
             </li>
             <li class="contact-top">
-                <a class="whatsapp-number" href="https://web.whatsapp.com/"></a>
-                <a class="telegram-number" href="https://t.me/"></a>
+                <a class="social-img" href="https://web.whatsapp.com/"><img src="{% static 'school/whatsapp.png' %}"></a>
+                <a class="social-img" href="https://t.me/"><img src="{% static 'school/tg.png' %}"></a>
             </li>
         </ul>
     </div>
@@ -52,3 +52,21 @@
 </html>
 {% block content %}
 {% endblock %}
+<footer>
+    <img class="footer-img" src="{% static 'school/footer.jpg' %}">
+    <div class="footer-menu">
+        <h2> Диана Ливинцева</h2>
+        <p>Иллюстратор и digital-художник</p>
+        <p>Digital Content Writer с 5-летним опытом работы в данной сфере. Организовала серию
+            мастер-классов для взрослых и детей по созданию акварельных изображений в procreate. Помогаю другим
+            художникам найти себя в мире цифровых иллюстраций, развить креативное мышление, чтобы начать придумывать
+            собственные миры.</p>
+    </div>
+    <div class="social-site">
+        <a href="#"><img class="social-img" src="{% static 'school/facebook.png' %}"></a>
+        <a href="#"><img class="social-img" src="{% static 'school/vk.png' %}"></a>
+        <a href="#"><img class="social-img" src="{% static 'school/instagramm.png' %}"></a>
+        <a href="#"><img class="social-img" src="{% static 'school/youtube.png' %}"></a>
+        <a href="#"><img class="social-img" src="{% static 'school/tiktok.png' %}"></a>
+    </div>
+</footer>

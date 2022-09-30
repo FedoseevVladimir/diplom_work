@@ -6,6 +6,7 @@
         <div class="mcourse-name">
             <h4>{{ course.course.name }}</h4>
         </div>
+        <a href="{{ course.course.tg_url }}">Ссылка на чат с обучающими видео в Телеграмм</a>
         <div class="mcourse-img">
             <img class="card-img-top"
                  src="/media/{{ course.course.image }}"
@@ -16,6 +17,6 @@
 </div>
 {% else %}
 <div class="course_no">
-    <h4>У вас еще нет купленных курсов</h4>
+    <h4>У вас еще нет купленных курсов :(</h4>
 </div>
 {% endif %}
