@@ -27,6 +27,8 @@ urlpatterns = [
     path('my_courses/', include('school.urls')),
     path('online-courses', views.courses, name='online-courses'),
     path('about_author', views.about_author, name='about_author'),
+    path('thanks/', views.thanks_page, name='thanks_page'),
+
 ]
 
 if settings.DEBUG:

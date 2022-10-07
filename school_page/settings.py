@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'school.apps.SchoolConfig',
     'users.apps.UsersConfig',
+    'telebot.apps.TelebotConfig',
 ]
 
 MIDDLEWARE = [

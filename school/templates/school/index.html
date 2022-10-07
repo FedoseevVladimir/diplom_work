@@ -1,5 +1,13 @@
 {% extends 'school/base.html' %}
+{% load static %}
 
 {% block content %}
+<div class="container">
+    <h3>WELCOME FROM DIAMOND SCHOOL</h3>
+</div>
+<div class="crs-1">
     {% include 'school/carusel.html' %}
+    {% include 'school/carusel-point.html' %}
+</div>
+    {% include 'school/form-back.html' %}
 {% endblock %}

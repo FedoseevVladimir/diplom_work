@@ -1,0 +1,33 @@
+<section>
+    <div class="form-backg">
+        <div class="form-1">
+            <h1 class="text-3">Оставь заявку и получи услугу</h1>
+            <div class="from-n1">
+                <form action="{% url 'thanks_page' %}" method="POST" style="width: 50%;">
+                    {% csrf_token %}
+                    <div class="form-col1">
+                        <label for="id_name" class="col-1">Имя</label><br>
+                        {{ form.name }}
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="form-col1">
+                        <label for="id_phone" class="col-1">Телефон</label><br>
+                        {{ form.phone }}
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="form-col1">
+                        <label for="id_service" class="col-2">Услуга</label><br>
+                        {{ form.service }}
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="form-but">
+                        <button type="submit" class="btn-success">ОСТАВИТЬ ЗАЯВКУ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

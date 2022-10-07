@@ -1,11 +1,18 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from .models import SSlider, AllCourses, MyCourses
+from .forms import OrderForm
+from telebot.sendmessage import send_telegram
 
 
 def first_page(request):
     slider_list = SSlider.objects.all()
-    return render(request, 'school/index.html', {'slider_list': slider_list})
+    form = OrderForm()
+    context = {
+        'form': form,
+        'slider_list': slider_list
+    }
+    return render(request, 'school/index.html', context)
 
 
 def courses(request):
@@ -27,3 +34,14 @@ def courses_add(request, course_id):
         return redirect(current_page)
     else:
         return redirect(current_page)
+
+
+def thanks_page(request):
+    if request.POST:
+        name = request.POST['name']
+        phone = request.POST['phone']
+        service = request.POST['service']
+        send_telegram(tg_name=name, tg_phone=phone, tg_service=service)
+        return render(request, 'school/thanks.html', {'name': name})
+    else:
+        return render(request, 'thanks.html')

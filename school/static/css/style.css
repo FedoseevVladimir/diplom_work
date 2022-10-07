@@ -2,10 +2,22 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #D9CCB9 !important;
   height: 780px;
+  background: linear-gradient(-45deg, #89A7B1, #EEEEE6, #d9ccb9, #C7DDA0);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
 }
-
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .slaider_h {
 	height: 60px;
 	width: 50%;
@@ -14,18 +26,47 @@ body {
 	background-color: rgba(10, 77, 125, 0.5);
 	text-align: center;
 }
-
-.carousel-item img {
-width: 1000px;
-height: 600px;
-}
 .social-img img{
   width: 46px;
   height: 46px;
   float: right;
   margin: 15px 30px 5px 20px;
 }
-
+.crs-1{
+  display: flex;
+  justify-content: space-between;
+}
+.txt-1{
+  width: 1000px !important;
+  font-family: 'Montserrat', sans-serif;
+}
+.txt-1 h3{
+  text-align: center;
+  font-size: 40px;
+}
+.txt-title{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: #544866;
+}
+.txt-cont{
+  font-weight: 600;
+}
+.carousel-item img {
+  height: 750px !important;
+  width: 750px !important;
+  border-radius: 50%;
+}
+.wrap-lst{
+  display: flex;
+  justify-content: space-between;
+}
+.check-mark img{
+  width: 90px;
+  height: 90px;
+  margin-right: 15px;
+}
 .mainmenu {
   box-sizing: border-box;
   display: flex;
@@ -74,6 +115,12 @@ height: 600px;
   text-align: center;
   font-size: 25px;
 }
+/* .header{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
 .col-md-6{
   font-size: 22px;
   margin: 0;
@@ -194,8 +241,8 @@ footer{
   text-align: center !important;
 }
 footer p{
-  width: 1070px;
-  padding-left: 30%;
+  text-align: center;
+  margin: 0 300px 0 300px;
 }
 .footer-menu{
   text-align: center !important;
@@ -204,4 +251,47 @@ footer p{
   width: 150px;
   height: 150px;
   border-radius: 2rem;
+}
+.from-n1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-col1 input{
+  width: 300px;
+  border-radius: 2em;
+}
+.form-1{
+  color: #fff;
+}
+.form-backg{
+  margin: 50px 200px 50px 200px;
+  padding: 30px 0 30px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 3em;
+}
+.btn-success{
+  margin-top: 20px;
+  border-radius: 2em;
+}
+.col-1{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+}
+.container h3{
+  font: 55px 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 35px 0 70px 0;
+  animation: flow 30s ease-in-out infinite;
+  background: linear-gradient(-60deg, rgb(0, 0, 0), rgb(255, 127, 127),rgb(255, 0, 0)) ;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

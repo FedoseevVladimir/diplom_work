@@ -4,9 +4,6 @@
             {% for slide in slider_list %}
             <div class="carousel-item {{ slide.s_css }}">
                 <img src="{{ slide.s_img.url }}" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="slaider_h">\{{ slide.s_title }}</h5>
-                </div>
             </div>
             {% endfor %}
         </div>
