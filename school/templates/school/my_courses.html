@@ -1,19 +1,23 @@
 {% if my_courses %}
 <div class="b_courses">
     <h4 class="mcourse-header">Мои курсы</h4>
-    {% for course in my_courses %}
-    <div class="mcourse-list">
-        <div class="mcourse-name">
-            <h4>{{ course.course.name }}</h4>
+    <div class="mcourse-all">
+        {% for course in my_courses %}
+        <div class="mc-bg">
+            <div class="mcourse-list">
+                <div class="mcourse-name">
+                    <h4>{{ course.course.name }}</h4>
+                </div>
+                <a href="{{ course.course.tg_url }}">КЛИК -> в Телеграмм</a>
+                <div class="mcourse-img">
+                    <img class="card-img-top"
+                         src="/media/{{ course.course.image }}"
+                         alt="">
+                </div>
+            </div>
         </div>
-        <a href="{{ course.course.tg_url }}">Ссылка на чат с обучающими видео в Телеграмм</a>
-        <div class="mcourse-img">
-            <img class="card-img-top"
-                 src="/media/{{ course.course.image }}"
-                 alt="">
-        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 {% else %}
 <div class="course_no">

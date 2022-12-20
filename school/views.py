@@ -17,11 +17,20 @@ def first_page(request):
 
 def courses(request):
     courses_all = AllCourses.objects.all()
-    return render(request, 'school/online-courses.html', {'courses_all': courses_all})
+    form = OrderForm()
+    context = {
+        'form': form,
+        'courses_all': courses_all
+    }
+    return render(request, 'school/online-courses.html', context)
 
 
 def about_author(request):
-    return render(request, 'school/about_author.html')
+    form = OrderForm()
+    context = {
+        'form': form,
+    }
+    return render(request, 'school/about_author.html', context)
 
 
 @login_required(login_url='/users/login/')

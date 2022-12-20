@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 780px;
+  background: linear-gradient(-45deg, #89A7B1, #EEEEE6, #d9ccb9, #C7DDA0);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .slaider_h {
 	height: 60px;
 	width: 50%;
@@ -6,34 +26,418 @@
 	background-color: rgba(10, 77, 125, 0.5);
 	text-align: center;
 }
-
-.slaider_p {
-	height: 100%;
-	width: 80%;
-	float: right;
-	margin: 0px 0px 30px 0px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: rgba(10, 77, 125, 0.5);
-	text-align: center;
-}
-
-.whatsapp-number {
-  width: 35px;
-  height: 35px;
+.social-img img{
+  width: 46px;
+  height: 46px;
   float: right;
   margin: 15px 30px 5px 20px;
-  background: url(../cms/wa-image-color.png) no-repeat center top / cover;
-  transition: 0.5s ease-in-out;
 }
-.telegram-number {
-  width: 35px;
-  height: 35px;
-  float: right;
+.crs-1{
+  display: flex;
+  justify-content: space-between;
+}
+.txt-1{
+  width: 1000px !important;
+  font-family: 'Montserrat', sans-serif;
+}
+.txt-1 h3{
+  text-align: center;
+  font-size: 40px;
+}
+.txt-title{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: #544866;
+}
+.txt-cont{
+  font-weight: 600;
+}
+.carousel-item img {
+  height: 750px !important;
+  width: 750px !important;
+  border-radius: 50%;
+}
+.wrap-lst{
+  display: flex;
+  justify-content: space-between;
+}
+.check-mark img{
+  width: 90px;
+  height: 90px;
+  margin-right: 15px;
+}
+.mainmenu {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  padding-top: 10px;
+  font-size: 35px;
+  background: #544866;
+  height: 92px;
+  box-shadow: 0 2px 6px 2px #544866a5;
+}
+.main a{
+  padding: 30px 15px 0px;
+  color: #89A7B1;
+  font-weight: 100;
+}
+.main a:hover {
+  color: #007aff;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.social-img img:hover {
+  transform:scale(1.3);
+  z-index: 1;
+  transition: .3s;
+}
+.logo img{
+  width: 100%;
+  height: 80%;
+}
+.shadow-lg{
+  background: rgba(0, 0, 0, 0.286);
+  width: 500px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin: 100px 0 0 -225px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(128, 128, 128);
+  border-radius: 1em;
+}
+.card-header{
+  text-align: center;
+  font-size: 25px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.col-md-6{
+  font-size: 22px;
+  margin: 0;
+  color: #434343;
+}
+.form-control{
+  width: 100%;
+  font-size: 20px;
+  color: #434343;
+  border: 0px;
+}
+.shadow-lg{
+  border: 0px;
+}
+.form-control{
+  margin: 5px 0 2px 0;
+}
+.form-group input{
+  font-size: 20px;
+  border: 0px;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+.from-n1 p {
+  font-size: 12px;
+  text-align: center;
+  margin: 5px 0 15px 0;
+  width: 300px;
+}
+.small {
+  text-align: center;
+}
+.mt-4 input{
+  padding: 4px 0 4px 0;
+}
+.mt-4 input:hover{
+  color: #007aff;
+  background-color: #544866;
+  transition: color .3s;
+}
+.mb-1 {
+  font-size: 22px;
+}
+.content{
+  margin: 119px 0 0 0;
+  box-sizing: border-box;
+}
+.card-image img{
+  margin: 15px;
+  width: 800px;
+  height: 500px;
+  border-radius: 1em;
+}
+.course-card{
+  margin: 25px;
+  display: flex;
+  justify-content: space-around;
+  background: #89A7B1;
+  border-radius: 1.5em;
+}
+.card-content h3{
+  font-weight: 600;
+}
+.card-image{
+  margin-right: 5px;
+}
+.card-content{
+  padding: 40px 10px 10px 40px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+.bff {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #f1c40f !important;
+  border-radius: 0.6em;
+  color: #f1c40f;
+  cursor: pointer;
+  display: flex;
+  height: 90px;
+  font-size: 55px !important;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.bff:hover, .bff:focus {
+  color: #fff;
+  outline: 0;
+}
+.card-btn {
+  border-color: #f1c40f;
+  color: #fff;
+  background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out !important;
+  transition: background 300ms ease-in-out !important;
+}
+.card-btn:hover {
+  background-position: 0;
+}
+.card-content a {
+  text-decoration: none !important;
+}
+.desc-img p{
+  margin: -7px 0 15px 15px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.social-site img{
+  width: 36px;
+  height: 36px;
   margin: 15px 30px 5px 20px;
-  background: url(../cms/tg-image-color.png) no-repeat center top / cover;
-  transition: 0.5s ease-in-out;
 }
-.small mb-1{
-	background: green;
+.social-site img:hover{
+  transform:scale(1.25);
+  z-index: 1;
+  transition: .3s;
+}
+footer{
+  margin-top: 50px;
+  padding: 50px 0 40px 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #434343;
+  color: #fff;
+  text-align: center !important;
+}
+footer p{
+  text-align: center;
+  margin: 0 300px 0 300px;
+}
+.footer-menu{
+  text-align: center !important;
+}
+.footer-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 2rem;
+}
+.from-n1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-col1 input{
+  width: 300px;
+  border-radius: 2em;
+}
+.form-1{
+  color: black;
+}
+.form-backg{
+  margin: 50px 200px 50px 200px;
+  padding: 30px 0 30px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 3em;
+}
+.btn-success{
+  width: 300px;
+  margin-top: 0;
+  border-radius: 2em;
+}
+.col-1{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+}
+.container2 h3{
+  font: 55px 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 35px 0 70px 0;
+  animation: flow 30s ease-in-out infinite;
+  background: linear-gradient(-60deg, rgb(0, 0, 0), rgb(255, 127, 127),rgb(255, 0, 0)) ;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container2 {
+  margin: 115px 0 0 0;
+}
+.col-lg-7 {
+  margin-left: 50px;
+}
+.profile-1{
+  display: flex;
+  justify-content: center;
+  margin: 144px 80px 0 80px;
+}
+.prof-img img{
+  width: 400px;
+  height: 570px;
+  border-radius: 30%;
+}
+.prof-desc{
+  margin: 100px 50px 0px 0px;
+}
+.main-p{
+  font-family: 'Montserrat', sans-serif;
+}
+#desc-name{
+  font-size: 55px;
+  font-weight: 600;
+  color: #434343;
+}
+#desc-desc{
+  font-size: 20px;
+  font-weight: 500;
+}
+.desc-line{
+  width: 909px;
+  height: 1.5px;
+  background: #544866;
+  margin: -10px 0 20px 0;
+}
+.profile-2{
+  margin: 60px 80px 0 60px;
+}
+.prof2-desc{
+  margin-bottom: 55px;
+}
+.prof2-desc2, .prof2-desc p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.prof2-desc2 h6{
+  font-size: 22px;
+  font-weight: 600;
+}
+.header-1 h5{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.profile-3 p{
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+#desc-desc em{
+  color: #007aff;
+}
+.b_courses{
+  font-family: 'Montserrat', sans-serif;
+}
+.mcourse-all{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+.mcourse-header{
+  font-weight: 600;
+  font: 55px 'Montserrat', sans-serif;
+  animation: flow 30s ease-in-out infinite;
+  background: linear-gradient(-60deg, rgb(0, 0, 0), rgb(255, 127, 127),rgb(255, 0, 0)) ;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mc-bg{
+  width: 280px;
+  height: 233px;
+  margin: 5px;
+  background-color: #43434323;
+  border-radius: 2rem;
+}
+.mcourse-list{
+  margin-left: 43px;
+  margin-top: 18px;
+  width: 230px;
+  height: 230px;
+}
+.row{
+  flex-wrap: nowrap !important;
+}
+.mcourse-img img{
+  width: 80%;
+  height: 80%;
+}
+.mcourse-list a{
+  font-size: 16.5px;
+  align-items: center;
+}
+.mcourse-name h4{
+  margin: 0;
+}
+.alert{
+  display: flex;
+  background-color: #4343432d;
+  justify-content: center;
+  border-radius: 2rem;
+}
+.close{
+  height: 20px;
+}
+.container h1{
+  font: 55px 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 115px 0 70px 0;
+  animation: flow 30s ease-in-out infinite;
+  background: linear-gradient(-60deg, rgb(0, 0, 0), rgb(255, 127, 127),rgb(255, 0, 0)) ;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
